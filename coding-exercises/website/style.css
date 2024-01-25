@@ -1,5 +1,50 @@
-p{
+/* p{
   color: blue;
   font-style: italic;
   font-family: sans-serif;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* viewpoint height */
+  background: #000000;
+}
+
+#chatbox {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  /* why when it's 20% chatbox would move? */
+  transform: translateX(-10%);
+  background: #000000;
+  padding: 10px; 
+  /* border: 1px solid #ccc; */
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  color:#ffffff;
+  /* the font color */
+  line-height: 30px;
+  
+}
+
+ #squares-container {
+  display: flex;
+  flex-wrap: wrap;
+/* IMPORTANT: to make the squares go back to the next line */
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+} 
+
+.square {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  margin: 5px;
 }
